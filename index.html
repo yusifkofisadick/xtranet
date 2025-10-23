@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teen</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div class="sky"><h1>SKY<span>X</span></h1></div>
+<div class="body">
+    
+    <div class="main">
+        <header><a href="#" class="logo">X<span>tranet</span><div class="line"></div></a>
+        <div class="serch"><img src="./images/search.png" alt=""></div>
+        </header>
+
+        <div class="homee">
+<div class="home">
+        <div class="ad-box">
+            <div class="ad"><img src="./images/banner-ad-2.jpg" alt=""></div>
+            <div class="ad"><img src="./images/banner-1.jpg" alt=""></div>
+            <div class="ad"><img src="./images/banner-ad-3.jpg" alt=""></div>
+        </div>
+
+        <div class="ad-form">
+        <div class="arrange">
+            <div class="trend-box"><img src="./images/category-thumb-3.jpg" alt=""></div>
+            <div class="trend-box"><img src="./images/product-thumb-30.png" alt=""></div>
+            <div class="trend-box"><img src="./images/product-thumbnail-1.jpg" alt=""></div>
+            <div class="trend-box"><img src="./images/category-thumb-6.jpg" alt=""></div>
+        </div>
+    </div>
+
+    
+    </div>
+
+    <div class="trend">
+        <h1>trending websites</h1>
+        <div class="trend-arrange">
+            <div class="box">
+                <div class="image">
+                   <img src="./images/product-thumb-30.png" alt="">
+                </div>
+              <div class="info">
+                <p class="default">click to read</p>
+                <p class="reading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis odit quos hic quae, reiciendis architecto dolorum consequatur autem aliquid?</p>
+                <div class="visit">
+                    <div class="left">visit</div>
+                    <div class="right"><img src="./images/external-link (1).png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+                <div class="image"><img src="./images/category-thumb-5.jpg" alt=""></div>
+            <div class="info">
+                <p class="default">click to read</p>
+                                <p class="reading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis odit quos hic quae, reiciendis architecto dolorum consequatur autem aliquid?</p>
+                <div class="visit">
+                    <div class="left">visit</div>
+                    <div class="right"><img src="./images/external-link (1).png" alt=""></div>
+                </div>
+            </div></div>
+
+
+            <div class="box">
+                <div class="image"><img src="./images/category-thumb-3.jpg" alt=""></div>
+            <div class="info">
+                <p class="default">click to read</p>
+                                <p class="reading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis odit quos hic quae, reiciendis architecto dolorum consequatur autem aliquid?</p>
+                <div class="visit">
+                    <div class="left">visit</div>
+                    <div class="right"><img src="./images/external-link (1).png" alt=""></div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="box">
+                <div class="image"><img src="./images/category-thumb-8.jpg" alt=""></div>
+            <div class="info">
+                <p class="default">click to read</p>
+                                <p class="reading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis odit quos hic quae, reiciendis architecto dolorum consequatur autem aliquid?</p>
+                <div class="visit">
+                    <div class="left">visit</div>
+                    <div class="right"><img src="./images/external-link (1).png" alt=""></div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+ <section>
+        <div class="input">
+            <div class="form">
+            <form action="#">
+                <input type="search" name="search" id="search">
+                
+            </form>
+            <div class="go"><img src="./images/search.png" alt=""></div>
+            </div>
+            <div class="close"><img src="./images/close.png" alt=""></div>
+        </div>
+        
+        <div class="result-box">
+            <div class="history">
+                <p class="head">History</p>
+                <div class="disp-history"></div>
+            </div>
+            <hr>
+            <div class="result"></div>
+        </div>
+    </section>
+    </div>
+
+   
+<div class="space"></div>
+
+<content></content>
+
+<menu></menu>
+
+
+
+
+    <div class="menu">
+    <div class="list">
+        <div class="nav1"><div class="svg"><img src="./images/homee.png" alt=""></div><p class="name">Home</p></div>
+        <div class="nav2"><div class="svg"><img src="./images/cate.png" alt=""></div><p class="name">Catelog</p></div>
+        <div class="nav3"><div class="svg"><img src="./images/menu.png" alt=""></div><p class="name">Menu</p></div>
+
+    </div>
+</div>
+</div>
+
+<script>
+
+
+const se = document.querySelector('.serch')
+const exit = document.querySelector('.close')
+const box = document.querySelector('section')
+const nav1 = document.querySelector('.nav1')
+const nav2 = document.querySelector('.nav2')
+const nav3 = document.querySelector('.nav3')
+
+
+se.addEventListener('click', () => {
+    box.classList.add('pop')
+})
+        
+exit.addEventListener('click', () => {
+    box.classList.remove('pop')
+})
+
+nav1.addEventListener('click', () => {
+    box.classList.remove('pop')
+})
+
+nav2.addEventListener('click', () => {
+    box.classList.remove('pop')
+})
+
+nav3.addEventListener('click', () => {
+    box.classList.remove('pop')
+})
+
+
+
+const open = document.querySelector('.nav2')
+const close = document.querySelector('.nav3')
+const clos = document.querySelector('.serch')
+const clox = document.querySelector('.nav1')
+const page = document.querySelector('content')
+
+
+open.addEventListener('click', () => {
+    page.classList.add('catelog-open')  
+})
+        
+close.addEventListener('click', () => {
+    page.classList.remove('catelog-open')
+})
+clos.addEventListener('click', () => {
+    page.classList.remove('catelog-open')
+})
+        
+clox.addEventListener('click', () => {
+    page.classList.remove('catelog-open')
+})
+
+clox.addEventListener('click', () => {
+    page.classList.remove('catelog-open')
+})
+        
+
+
+const ope = document.querySelector('.nav3')
+const ex = document.querySelector('.nav1')
+const exe = document.querySelector('.nav2')
+const menu = document.querySelector('menu')
+
+
+ope.addEventListener('click', () => {
+    menu.classList.add('menu-op')  
+})
+
+ex.addEventListener('click', () => {
+    menu.classList.remove('menu-op')  
+})
+
+exe.addEventListener('click', () => {
+    menu.classList.remove('menu-op')  
+})
+
+
+
+
+    </script>
+
+</body>
+</html>
